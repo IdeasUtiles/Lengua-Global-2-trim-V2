@@ -1,24 +1,6 @@
 const LS_KEY = "pau_lengua_stats_v1";
 const SESH_KEY = "pau_lengua_last_session_v1";
 
-// --- Debug-friendly error surface (shows errors on the page) ---
-function showFatal(msg){
-  try{
-    const app = document.querySelector("#app");
-    if(!app) return;
-    app.innerHTML = "";
-    const box = document.createElement("div");
-    box.className = "card";
-    box.innerHTML = `<h2 style="margin:0 0 8px 0">⚠️ Error</h2>
-      <div class="note" style="white-space:pre-wrap">${msg}</div>
-      <div class="note" style="margin-top:10px">Pista rápida: revisa que <b>app.js</b> y <b>questions.js</b> estén en la <b>raíz</b> del repo y carguen con estado 200 en Network.</div>`;
-    app.appendChild(box);
-  }catch(e){}
-}
-window.addEventListener("error",(e)=>showFatal(e.message || String(e.error || e)));
-window.addEventListener("unhandledrejection",(e)=>showFatal(e.reason ? String(e.reason) : "Promise rejection"));
-// --------------------------------------------------------------
-
 function loadStats(){
   try{
     return JSON.parse(localStorage.getItem(LS_KEY)) || {byId:{}, sessions:[]};
@@ -188,7 +170,6 @@ function renderQuestion(){
   const app = document.querySelector("#app");
   const q = currentQuestion();
   const sess = STATE.session;
-  const item = sess.items[sess.idx];
   const pos = sess.idx+1;
   const total = sess.items.length;
 
@@ -205,22 +186,21 @@ function renderQuestion(){
   ]);
 
   const body = el("div",{class:"card"},[]);
-
   if(q.tipo==="mc"){
-    // Shuffle options PER QUESTION and keep them stable while navigating.
-    // We store an order of original indices in the session item: item.optOrder = [2,0,1,3], etc.
-    if(!item.optOrder || item.optOrder.length !== q.opciones.length){
+    // Barajar opciones por pregunta y mantener el orden estable durante la sesión.
+    // Guardamos en el item el orden de índices originales: item.optOrder = [2,0,1,3]...
+    if(!sess.items[sess.idx].optOrder || sess.items[sess.idx].optOrder.length !== q.opciones.length){
       const idxs = Array.from({length:q.opciones.length}, (_,i)=>i);
       for(let i=idxs.length-1;i>0;i--){
         const j = Math.floor(Math.random()*(i+1));
         [idxs[i], idxs[j]] = [idxs[j], idxs[i]];
       }
-      item.optOrder = idxs;
+      sess.items[sess.idx].optOrder = idxs;
       localStorage.setItem(SESH_KEY, JSON.stringify(sess));
     }
 
     const form = el("div",{},[]);
-    item.optOrder.forEach((origIdx, displayIdx)=>{
+    sess.items[sess.idx].optOrder.forEach((origIdx, displayIdx)=>{
       const opt = q.opciones[origIdx];
       const row = el("div",{class:"opt"},[
         el("input",{type:"radio",name:"opt",value:String(displayIdx)}),
@@ -234,33 +214,30 @@ function renderQuestion(){
 
     const btn = el("button",{class:"btn primary"},["Comprobar"]);
     const fb = el("div",{style:"margin-top:10px"},[]);
-
     btn.onclick = ()=>{
       const checked = form.querySelector("input[name=opt]:checked");
       if(!checked){ alert("Elige una opción."); return; }
 
       const displayIdx = Number(checked.value);
-      const chosenOrigIdx = item.optOrder[displayIdx];
-      const ok = chosenOrigIdx === q.correcta;
+      const chosenOrigIdx = sess.items[sess.idx].optOrder[displayIdx];
+      const ok = chosenOrigIdx===q.correcta;
 
-      item.ok = ok;
-      item.answer = displayIdx;
+      sess.items[sess.idx].ok = ok;
+      sess.items[sess.idx].answer = displayIdx;
 
       fb.innerHTML="";
       fb.appendChild(el("div",{class:"pill",style:`border-color:${ok?"rgba(74,222,128,.4)":"rgba(251,113,133,.4)"};color:${ok?"#bff7d0":"#ffd0d7"}`},[
         ok ? "✅ Correcto" : `❌ No. La correcta era: ${q.opciones[q.correcta]}`
       ]));
       fb.appendChild(el("div",{class:"note",style:"margin-top:8px"},[q.exp || ""]));
-
       updateStats(q.id, ok);
       localStorage.setItem(SESH_KEY, JSON.stringify(sess));
       renderNav(app);
     };
-
     body.appendChild(form);
     body.appendChild(el("div",{class:"row",style:"margin-top:10px"},[btn]));
     body.appendChild(fb);
-  }else{
+}else{
     const ta = el("textarea",{placeholder:"Escribe tu respuesta (2-8 líneas). Luego compárala con el modelo."},[]);
     const model = el("div",{style:"margin-top:10px"},[
       el("div",{class:"small"},["Respuesta modelo (para comparar):"]),
@@ -275,17 +252,15 @@ function renderQuestion(){
     const got = el("button",{class:"btn good"},["✅ Me salió"]);
     const nogo = el("button",{class:"btn bad"},["❌ No todavía"]);
     got.onclick = ()=>{
-      item.ok = true;
-      item.answer = ta.value || "";
+      sess.items[sess.idx].ok = true;
+      sess.items[sess.idx].answer = ta.value || "";
       updateStats(q.id, true);
-      localStorage.setItem(SESH_KEY, JSON.stringify(sess));
       renderNav(app);
     };
     nogo.onclick = ()=>{
-      item.ok = false;
-      item.answer = ta.value || "";
+      sess.items[sess.idx].ok = false;
+      sess.items[sess.idx].answer = ta.value || "";
       updateStats(q.id, false);
-      localStorage.setItem(SESH_KEY, JSON.stringify(sess));
       renderNav(app);
     };
 
@@ -472,8 +447,6 @@ function resumeIfSaved(){
 }
 
 window.addEventListener("load",()=>{
-  try{ const app=document.querySelector('#app'); if(app) app.innerHTML = '<div class="card"><div class="note">Cargando…</div></div>'; }catch(e){}
-
   if(resumeIfSaved()){
     if(confirm("Tienes una sesión guardada. ¿Continuar?")){
       renderQuestion();
