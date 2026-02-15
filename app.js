@@ -1,6 +1,24 @@
 const LS_KEY = "pau_lengua_stats_v1";
 const SESH_KEY = "pau_lengua_last_session_v1";
 
+// --- Debug-friendly error surface (shows errors on the page) ---
+function showFatal(msg){
+  try{
+    const app = document.querySelector("#app");
+    if(!app) return;
+    app.innerHTML = "";
+    const box = document.createElement("div");
+    box.className = "card";
+    box.innerHTML = `<h2 style="margin:0 0 8px 0">⚠️ Error</h2>
+      <div class="note" style="white-space:pre-wrap">${msg}</div>
+      <div class="note" style="margin-top:10px">Pista rápida: revisa que <b>app.js</b> y <b>questions.js</b> estén en la <b>raíz</b> del repo y carguen con estado 200 en Network.</div>`;
+    app.appendChild(box);
+  }catch(e){}
+}
+window.addEventListener("error",(e)=>showFatal(e.message || String(e.error || e)));
+window.addEventListener("unhandledrejection",(e)=>showFatal(e.reason ? String(e.reason) : "Promise rejection"));
+// --------------------------------------------------------------
+
 function loadStats(){
   try{
     return JSON.parse(localStorage.getItem(LS_KEY)) || {byId:{}, sessions:[]};
@@ -282,7 +300,6 @@ function renderQuestion(){
 }
 
 function renderNav(app){
-(app){
   // add nav card at bottom if not exists
   if(document.querySelector("#navCard")) return;
   const sess = STATE.session;
@@ -455,6 +472,8 @@ function resumeIfSaved(){
 }
 
 window.addEventListener("load",()=>{
+  try{ const app=document.querySelector('#app'); if(app) app.innerHTML = '<div class="card"><div class="note">Cargando…</div></div>'; }catch(e){}
+
   if(resumeIfSaved()){
     if(confirm("Tienes una sesión guardada. ¿Continuar?")){
       renderQuestion();
