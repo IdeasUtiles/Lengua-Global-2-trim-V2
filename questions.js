@@ -837,48 +837,48 @@ window.LENGUA_META = {
   "study_cards": {
     "COM": [
       [
-        "Formato PAU",
-        "Comentario de texto, resumen de 40-50 palabras y texto argumentativo de 100-150 palabras."
+        "Qué se entrena",
+        "Tema, tesis, estructura, resumen y argumentación."
       ],
       [
-        "Idea útil",
-        "Primero identifica tema y tipo de texto; después resume sin copiar; por último argumenta con postura clara."
+        "Recordatorio PAU",
+        "Resumen: 40-50 palabras. Argumentación: 100-150 palabras. Esto aparece como ayuda, no como pregunta."
       ]
     ],
     "LENG": [
       [
-        "Formato PAU",
-        "Sintaxis, reflexión gramatical, morfología y sinonimia."
+        "Qué se entrena",
+        "Sintaxis, clases de palabras, morfología, sinonimia y reflexión gramatical."
       ],
       [
         "Idea útil",
-        "En gramática, nombra la categoría con precisión y justifica siempre con un ejemplo."
+        "No basta con nombrar: hay que justificar la respuesta con función o rasgo."
       ]
     ],
     "T1": [
       [
         "Mapa mínimo",
-        "Realismo: observación objetiva, narrador omnisciente, detallismo, burguesía y vida cotidiana. Naturalismo: determinismo, ambientes duros, herencia y medio."
+        "Realismo: observación objetiva, narrador omnisciente, detallismo, vida cotidiana. Naturalismo: determinismo, medio, herencia y ambientes degradados."
       ],
       [
         "Mnemotecnia",
-        "R-O-D-B / N-D-M"
+        "R-O-D / N-D-M-H"
       ]
     ],
     "T2": [
       [
         "Mapa mínimo",
-        "Modernismo: evasión, estética, sensorialidad. 98: sobriedad, España, intrahistoria, existencialismo. Teatro anterior a 1936: comercial vs renovador."
+        "Modernismo: estética, musicalidad, evasión. 98: España, sobriedad, intrahistoria, existencialismo."
       ],
       [
         "Mnemotecnia",
-        "M-E-S / 98-E-I"
+        "M-E-M / 98-E-I"
       ]
     ],
     "T3": [
       [
         "Mapa mínimo",
-        "Novecentismo: arte puro, intelectualidad, ensayo, novela lírica y formalista. Juan Ramón: etapa sensitiva, intelectual y suficiente."
+        "Novecentismo: arte puro, intelectualidad, ensayo. Juan Ramón: sensitiva, intelectual y suficiente."
       ],
       [
         "Mnemotecnia",
@@ -888,7 +888,7 @@ window.LENGUA_META = {
     "T4": [
       [
         "Mapa mínimo",
-        "Vanguardias: ruptura, originalidad, provocación. Futurismo, Cubismo, Dadaísmo, Expresionismo, Surrealismo. En España: Ortega, Ramón y el 27."
+        "Vanguardias: ruptura, provocación, ismos europeos y recepción en España."
       ],
       [
         "Mnemotecnia",
@@ -898,31 +898,31 @@ window.LENGUA_META = {
     "T5": [
       [
         "Mapa mínimo",
-        "27: tradición + vanguardia, tres etapas, autores clave. Teatro lorquiano: lirismo, simbolismo, mujer, marginación, destino trágico."
+        "27: tradición + vanguardia, etapas y autores. Lorca: símbolo, lírica, tragedia."
       ],
       [
         "Mnemotecnia",
-        "T+V / 3 etapas / L-S-M-D"
+        "T+V / 3 etapas / L-T-S"
       ]
     ],
     "T6": [
       [
         "Mapa mínimo",
-        "Exilio, años 40 (existencial y triunfalista), años 50 (realismo social), años 60-75 (innovación narrativa)."
+        "Novela de posguerra: exilio, años 40, 50 y renovación desde 1962."
       ],
       [
         "Mnemotecnia",
-        "E-40-50-60"
+        "E-40-50-62"
       ]
     ],
     "T8": [
       [
         "Mapa mínimo",
-        "Desde 1975: fin de la censura, recuperación del gusto por narrar, mezcla de géneros, novela policíaca, histórica, intimista y testimonial."
+        "Desde 1975: recuperación del relato, diversidad de tendencias y mezcla de géneros."
       ],
       [
         "Mnemotecnia",
-        "N-H-I-T"
+        "R-D-M"
       ]
     ]
   },
