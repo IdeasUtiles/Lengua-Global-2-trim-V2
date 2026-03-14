@@ -1,384 +1,931 @@
-window.QUESTION_BANK = [
+window.LENGUA_BANK = [
   {
-    "id": "T1-01",
-    "tema": "1. Realismo/Naturalismo",
-    "tipo": "mc",
-    "pregunta": "¿Qué idea resume mejor el Realismo literario frente al Romanticismo?",
-    "opciones": [
-      "Idealiza la realidad y prioriza lo subjetivo",
-      "Busca representar la realidad con observación minuciosa y objetiva",
-      "Rechaza la novela y prefiere la lírica",
-      "Se centra en lo fantástico y lo irracional"
-    ],
-    "correcta": 1,
-    "exp": "El Realismo observa lo que rodea al escritor y busca plasmarlo con fidelidad, sustituyendo la visión idealista/subjetiva romántica por una representación objetiva."
-  },
-  {
-    "id": "T1-02",
-    "tema": "1. Realismo/Naturalismo",
-    "tipo": "mc",
-    "pregunta": "En la técnica narrativa realista, ¿qué rasgo es más característico?",
-    "opciones": [
-      "Narrador protagonista en primera persona siempre",
-      "Narrador omnisciente con intervención y acceso a pensamientos",
-      "Ausencia total de descripciones",
-      "Uso exclusivo de diálogo teatral"
-    ],
-    "correcta": 1,
-    "exp": "La narrativa realista se apoya en un narrador omnisciente que conoce pasado/presente y puede comentar e incluso dirigirse al lector, facilitando la introspección."
-  },
-  {
-    "id": "T1-03",
-    "tema": "1. Realismo/Naturalismo",
-    "tipo": "mc",
-    "pregunta": "¿Qué es el estilo indirecto libre?",
-    "opciones": [
-      "Citas textuales entrecomilladas del personaje",
-      "El narrador reproduce el pensamiento del personaje mezclado con su voz, sin marcas claras",
-      "Un resumen objetivo sin subjetividad",
-      "Un monólogo interior en verso"
-    ],
-    "correcta": 1,
-    "exp": "Permite mostrar el discurso mental del personaje 'en boca del narrador' sin señales típicas; a veces cuesta diferenciar narrador/personaje."
-  },
-  {
-    "id": "T1-04",
-    "tema": "1. Realismo/Naturalismo",
-    "tipo": "mc",
-    "pregunta": "¿Cuál es una diferencia clave entre Realismo y Naturalismo?",
-    "opciones": [
-      "El Realismo rechaza la descripción; el Naturalismo la usa",
-      "El Naturalismo lleva el Realismo al extremo con determinismo (medio, herencia y momento histórico)",
-      "El Naturalismo es anterior al Realismo",
-      "El Realismo solo trata temas rurales"
-    ],
-    "correcta": 1,
-    "exp": "El Naturalismo aplica un enfoque casi 'científico' y determinista: conducta condicionada por medio, herencia y época; además muestra ambientes crudos y crítica social."
-  },
-  {
-    "id": "T1-05",
-    "tema": "1. Realismo/Naturalismo",
-    "tipo": "mc",
-    "pregunta": "¿Qué autora defendió un Naturalismo moderado en España y escribió 'Los pazos de Ulloa'?",
-    "opciones": [
-      "Cecilia Böhl de Faber (Fernán Caballero)",
-      "Emilia Pardo Bazán",
-      "Rosalía de Castro",
-      "Concha Méndez"
-    ],
-    "correcta": 1,
-    "exp": "Emilia Pardo Bazán planteó y practicó el Naturalismo en España de forma más sistemática y moderada; 'Los pazos de Ulloa' es su obra clave."
-  },
-  {
-    "id": "T1-06",
-    "tema": "1. Realismo/Naturalismo",
+    "id": "COM-A1",
+    "bloque": "COM",
+    "tema": "Comentario de texto",
     "tipo": "open",
-    "pregunta": "Explica en 5-6 líneas qué es la **novela de tesis** y por qué aparece en el Realismo español.",
-    "respuesta_modelo": "En el Realismo español muchos autores toman partido en el debate ideológico (conservadores vs liberal-progresistas). La novela de tesis surge como una narración que, además de representar la realidad, busca demostrar una idea o postura (moral, política, religiosa). Por eso el narrador suele ser más 'interventor' y comenta conductas/ideologías para orientar al lector.",
-    "exp": "El temario vincula la técnica omnisciente 'interventora' con las novelas de tesis."
-  },
-  {
-    "id": "T1-07",
-    "tema": "1. Realismo/Naturalismo",
-    "tipo": "mc",
-    "pregunta": "En los temas del Realismo, el adulterio aparece a menudo como…",
-    "opciones": [
-      "Un asunto imposible de tratar",
-      "Parte de relaciones problemáticas y 'amor real' (no idealizado)",
-      "Un tema exclusivo del Naturalismo francés",
-      "Un tema solo masculino y heroico"
+    "pregunta": "Tema y tipología: identifica el tema central y el tipo de texto del editorial sobre el edadismo.",
+    "respuesta_modelo": "El texto trata sobre la discriminación por edad o edadismo y denuncia su normalización social y laboral. Es un texto periodístico de opinión, concretamente un editorial, de carácter argumentativo-expositivo.",
+    "must_include": [
+      "edadismo",
+      "discriminación",
+      "editorial",
+      "periodístico",
+      "opinión",
+      "argumentativo"
     ],
-    "correcta": 1,
-    "exp": "El amor aparece, pero muchas veces en marco problemático (adulterio, matrimonios desgastados), como 'amor real' frente al ideal romántico."
+    "exp": "En el simulacro, el bloque 1 pide comentar el texto indicando tema, rasgos lingüísticos y tipo textual.",
+    "min_chars": 110
   },
   {
-    "id": "T2-01",
-    "tema": "2. Modernismo/98",
-    "tipo": "mc",
-    "pregunta": "El Modernismo nace en…",
-    "opciones": [
-      "España, con los novecentistas",
-      "Hispanoamérica, y llega a Europa con Rubén Darío",
-      "Francia, con Zola",
-      "Alemania, con el Expresionismo"
-    ],
-    "correcta": 1,
-    "exp": "El temario indica origen hispanoamericano e importación a Europa con Rubén Darío ('Azul...', 1888)."
-  },
-  {
-    "id": "T2-02",
-    "tema": "2. Modernismo/98",
-    "tipo": "mc",
-    "pregunta": "¿Qué rasgo es más propio del Modernismo?",
-    "opciones": [
-      "Sobriedad léxica y reflexión sobre España",
-      "Poética de las sensaciones, esteticismo y renovación métrica",
-      "Determinismo biológico",
-      "Deformación esperpéntica de la realidad"
-    ],
-    "correcta": 1,
-    "exp": "Modernismo: culto a la belleza formal, lenguaje refinado, cromatismo, sinestesias, exotismo, renovación métrica."
-  },
-  {
-    "id": "T2-03",
-    "tema": "2. Modernismo/98",
-    "tipo": "mc",
-    "pregunta": "La Generación del 98 se centra especialmente en…",
-    "opciones": [
-      "La evasión a paraísos artificiales",
-      "El 'tema de España', intrahistoria y reflexión existencial/religiosa",
-      "La experimentación vanguardista",
-      "La lírica neopopular del 27"
-    ],
-    "correcta": 1,
-    "exp": "El 98 denuncia y analiza las causas de la decadencia española: paisaje castellano, intrahistoria y reflexión existencial/religiosa."
-  },
-  {
-    "id": "T2-04",
-    "tema": "2. Modernismo/98",
+    "id": "COM-A2",
+    "bloque": "COM",
+    "tema": "Resumen",
     "tipo": "open",
-    "pregunta": "En 6-8 líneas: diferencia **Modernismo** y **Generación del 98** en estética y temática. (Pon 2 rasgos de cada uno).",
-    "respuesta_modelo": "El Modernismo busca la belleza y el esteticismo: lenguaje ornamental, sensorial, exotismo, musicalidad y renovación métrica; puede ser escapista o intimista. La Generación del 98 es más sobria y crítica: lenguaje natural, presencia del autor y reflexión sobre España (paisaje castellano, intrahistoria) y preocupaciones existenciales y religiosas.",
-    "exp": "Resumen de rasgos que aparecen en el tema 2."
-  },
-  {
-    "id": "T2-05",
-    "tema": "2. Modernismo/98",
-    "tipo": "mc",
-    "pregunta": "¿Qué es el **esperpento** de Valle-Inclán?",
-    "opciones": [
-      "Un teatro costumbrista suave",
-      "Un género basado en deformación para denunciar la sociedad, con huellas del expresionismo",
-      "Una poesía neopopular",
-      "Una novela realista de tesis"
+    "pregunta": "Redacta un resumen de entre 40 y 50 palabras del texto sobre la felicidad.",
+    "respuesta_modelo": "La autora sostiene que la felicidad no es una meta puntual, sino una búsqueda construida con esfuerzo, paciencia y perseverancia. Más que un estado permanente, consiste en una actitud vital orientada a lograr la mejor vida posible dentro de nuestras circunstancias.",
+    "must_include": [
+      "felicidad",
+      "búsqueda",
+      "esfuerzo",
+      "paciencia",
+      "perseverancia",
+      "actitud"
     ],
-    "correcta": 1,
-    "exp": "Valle-Inclán culmina en el esperpento: deformación de personajes y valores para denunciar la sociedad; se relaciona con expresionismo y aparece en 'Luces de bohemia'."
+    "exp": "El simulacro pide un resumen muy breve: lo importante es condensar sin copiar.",
+    "min_chars": 90
   },
   {
-    "id": "T3-01",
-    "tema": "3. Novecentismo/14 y JRJ",
-    "tipo": "mc",
-    "pregunta": "Los novecentistas (Generación del 14) defienden, en general…",
-    "opciones": [
-      "Un arte sentimental y popular",
-      "Un arte puro y depurado, intelectual, 'para minorías'",
-      "El retorno al Realismo decimonónico",
-      "La escritura automática surrealista"
-    ],
-    "correcta": 1,
-    "exp": "Buscan alejarse de excesos modernistas: objetivismo, racionalidad, arte puro y depurado dirigido a minorías."
-  },
-  {
-    "id": "T3-02",
-    "tema": "3. Novecentismo/14 y JRJ",
-    "tipo": "mc",
-    "pregunta": "Según el temario, el género más cultivado por el Novecentismo fue…",
-    "opciones": [
-      "La epopeya",
-      "El ensayo",
-      "El romance",
-      "La novela picaresca"
-    ],
-    "correcta": 1,
-    "exp": "El ensayo fue el vehículo idóneo para difundir ideas; Ortega y Gasset es clave (p.ej., 'La deshumanización del arte')."
-  },
-  {
-    "id": "T3-03",
-    "tema": "3. Novecentismo/14 y JRJ",
-    "tipo": "mc",
-    "pregunta": "La novela novecentista suele caracterizarse por…",
-    "opciones": [
-      "Trama muy intensa y aventuras constantes",
-      "Intelectualidad y reflexión, prosa pulcra; la trama queda en segundo plano",
-      "Detallismo descriptivo de ambientes rurales",
-      "Finales trágicos circulares"
-    ],
-    "correcta": 1,
-    "exp": "Ortega impulsa ideas sobre la novela: prosa pulcra, reflexiva, lírica/formalista; menos peso de la trama."
-  },
-  {
-    "id": "T3-04",
-    "tema": "3. Novecentismo/14 y JRJ",
-    "tipo": "mc",
-    "pregunta": "Juan Ramón Jiménez: su etapa de **poesía pura** (1916-1936) se inicia con…",
-    "opciones": [
-      "Platero y yo",
-      "Diario de un poeta recién casado",
-      "Animal de fondo",
-      "Campos de Castilla"
-    ],
-    "correcta": 1,
-    "exp": "La etapa intelectual o de poesía pura nace con 'Diario de un poeta recién casado' (1916)."
-  },
-  {
-    "id": "T3-05",
-    "tema": "3. Novecentismo/14 y JRJ",
+    "id": "COM-A3",
+    "bloque": "COM",
+    "tema": "Argumentación",
     "tipo": "open",
-    "pregunta": "Resume las **tres etapas** de la poesía de Juan Ramón Jiménez (nombre + rasgos).",
-    "respuesta_modelo": "1) Sensitiva/modernista (hasta 1915): intimismo, musicalidad, tono melancólico; motivos modernistas; influencia de Bécquer y simbolistas. 2) Intelectual/poesía pura (1916-1936): 'desnudar' el lenguaje, eliminar lo anecdótico, buscar la esencia; poesía más abstracta/metafísica. 3) Suficiente/verdadera (exilio, desde 1936): trascendentalismo, ansia de totalidad/eternidad, lenguaje más complejo con neologismos; formas libres.",
-    "exp": "Las etapas aparecen explicitadas en el tema 3."
+    "pregunta": "Escribe un texto argumentativo breve manifestando acuerdo o desacuerdo con la idea de que la felicidad es una búsqueda.",
+    "respuesta_modelo": "Estoy de acuerdo con que la felicidad es una búsqueda, porque no suele presentarse como un logro definitivo. Más bien depende de hábitos, decisiones y de la forma de interpretar lo que nos ocurre. Pensar así evita frustraciones y obliga a construir una vida con paciencia, voluntad y sentido crítico.",
+    "must_include": [
+      "acuerdo",
+      "desacuerdo",
+      "felicidad",
+      "búsqueda",
+      "postura",
+      "argumento",
+      "conclusión"
+    ],
+    "exp": "En la PAU de muestra se pide una argumentación breve con postura explícita.",
+    "min_chars": 110
   },
   {
-    "id": "T4-01",
-    "tema": "4. Vanguardias",
+    "id": "COM-M1",
+    "bloque": "COM",
+    "tema": "Comentario de texto",
     "tipo": "mc",
-    "pregunta": "Las vanguardias europeas del primer tercio del siglo XX se caracterizan por…",
+    "pregunta": "En el bloque de Comunicación del simulacro, el resumen debe tener…",
     "opciones": [
-      "Continuidad con la tradición sin polémica",
-      "Ruptura con la tradición, afán de originalidad, provocación e intención lúdica",
-      "Defensa del realismo objetivo burgués",
-      "Rechazo total de manifiestos"
+      "20-30 palabras",
+      "40-50 palabras",
+      "80-100 palabras",
+      "150-200 palabras"
     ],
     "correcta": 1,
-    "exp": "Los 'ismos' surgen con manifiestos y buscan ruptura, originalidad, provocación y polémica; fervor breve."
+    "exp": "El examen fija expresamente un resumen de entre 40 y 50 palabras."
   },
   {
-    "id": "T4-02",
-    "tema": "4. Vanguardias",
+    "id": "COM-M2",
+    "bloque": "COM",
+    "tema": "Comentario de texto",
     "tipo": "mc",
-    "pregunta": "¿Qué vanguardia exalta la modernidad y los avances tecnológicos y transgrede la gramática?",
+    "pregunta": "En el texto argumentativo del bloque 1, la extensión pedida es…",
     "opciones": [
-      "Dadaísmo",
+      "40-50 palabras",
+      "70-90 palabras",
+      "100-150 palabras",
+      "200-250 palabras"
+    ],
+    "correcta": 2,
+    "exp": "El simulacro pide un texto argumentativo de entre 100 y 150 palabras."
+  },
+  {
+    "id": "COM-MA1",
+    "bloque": "COM",
+    "tema": "Estructura del comentario",
+    "tipo": "match",
+    "pairs": [
+      [
+        "Tema",
+        "idea central formulada con precisión"
+      ],
+      [
+        "Resumen",
+        "síntesis objetiva y breve"
+      ],
+      [
+        "Texto argumentativo",
+        "postura personal razonada"
+      ]
+    ],
+    "exp": "El bloque 1 combina comentario, resumen y argumentación; cada tarea exige una estrategia distinta."
+  },
+  {
+    "id": "LENG-A1",
+    "bloque": "LENG",
+    "tema": "Sintaxis",
+    "tipo": "open",
+    "pregunta": "Explica por qué es correcta 'El jugador que me ganó' y agramatical '*El jugador quien me ganó'.",
+    "respuesta_modelo": "'Que' puede funcionar como pronombre relativo sin preposición para introducir una subordinada adjetiva especificativa. En cambio, 'quien' no resulta adecuado en esa construcción concreta, por eso la segunda secuencia se considera agramatical.",
+    "must_include": [
+      "que",
+      "relativo",
+      "quien",
+      "agramatical",
+      "subordinada",
+      "adjetiva",
+      "antecedente"
+    ],
+    "exp": "El examen modelo incluye exactamente este contraste en el bloque 2.",
+    "min_chars": 180
+  },
+  {
+    "id": "LENG-A2",
+    "bloque": "LENG",
+    "tema": "Morfología",
+    "tipo": "open",
+    "pregunta": "Define sinonimia y aporta dos sinónimos de 'innovación'.",
+    "respuesta_modelo": "La sinonimia es la relación semántica entre palabras o expresiones de significado semejante. Dos posibles sinónimos de innovación son novedad y renovación.",
+    "must_include": [
+      "sinonimia",
+      "significado",
+      "semejante",
+      "innovación",
+      "novedad",
+      "renovación"
+    ],
+    "exp": "En el simulacro se pide definir el concepto y aportar dos ejemplos.",
+    "min_chars": 180
+  },
+  {
+    "id": "LENG-M1",
+    "bloque": "LENG",
+    "tema": "Morfología",
+    "tipo": "mc",
+    "pregunta": "En el simulacro, 'cabizbajas' se trabaja como una cuestión de…",
+    "opciones": [
+      "Métrica",
+      "Morfología y formación de palabras",
+      "Pragmática",
+      "Ortografía histórica"
+    ],
+    "correcta": 1,
+    "exp": "El examen pide categoría gramatical, estructura morfológica y proceso de formación."
+  },
+  {
+    "id": "LENG-C1",
+    "bloque": "LENG",
+    "tema": "Gramática",
+    "tipo": "cloze",
+    "texto": "Una secuencia con verbo copulativo, subordinada adjetiva, atributo y cuantificador podría ser: 'Ella es ________ la chica ________ llegó'.",
+    "blanks": [
+      {
+        "a": "muy feliz"
+      },
+      {
+        "a": "que"
+      }
+    ],
+    "bank": [
+      "muy feliz",
+      "que",
+      "rápidamente",
+      "aunque"
+    ],
+    "exp": "Sirve para recordar cómo integrar atributo y subordinada adjetiva en una misma secuencia."
+  },
+  {
+    "id": "LENG-MA1",
+    "bloque": "LENG",
+    "tema": "Clases de palabras",
+    "tipo": "match",
+    "pairs": [
+      [
+        "verbo copulativo",
+        "ser / estar / parecer"
+      ],
+      [
+        "atributo",
+        "complemento exigido por verbo copulativo"
+      ],
+      [
+        "subordinada adjetiva",
+        "oración que modifica a un nombre"
+      ],
+      [
+        "cuantificador",
+        "palabra que expresa cantidad o intensidad"
+      ]
+    ],
+    "exp": "En reflexión lingüística conviene identificar función y no solo memorizar etiquetas."
+  },
+  {
+    "id": "T1-M1",
+    "bloque": "T1",
+    "tema": "Realismo",
+    "tipo": "mc",
+    "pregunta": "La novela realista busca sobre todo…",
+    "opciones": [
+      "evasión exótica",
+      "representación fiel de la realidad",
+      "escritura automática",
+      "destrucción de la sintaxis"
+    ],
+    "correcta": 1,
+    "exp": "El Realismo pretende observar y reflejar la realidad de forma minuciosa y verosímil."
+  },
+  {
+    "id": "T1-C1",
+    "bloque": "T1",
+    "tema": "Realismo",
+    "tipo": "cloze",
+    "texto": "El Naturalismo se asocia al ________ y a la influencia del ________ social.",
+    "blanks": [
+      {
+        "a": "determinismo"
+      },
+      {
+        "a": "medio"
+      }
+    ],
+    "bank": [
+      "determinismo",
+      "medio",
+      "humor",
+      "azar"
+    ],
+    "exp": "En el Naturalismo pesan la herencia, el medio y el momento histórico."
+  },
+  {
+    "id": "T1-MA1",
+    "bloque": "T1",
+    "tema": "Realismo",
+    "tipo": "match",
+    "pairs": [
+      [
+        "Galdós",
+        "Fortunata y Jacinta"
+      ],
+      [
+        "Clarín",
+        "La Regenta"
+      ],
+      [
+        "Emilia Pardo Bazán",
+        "Naturalismo moderado"
+      ]
+    ],
+    "exp": "Estos nombres aparecen en el tema 1 como referencias básicas."
+  },
+  {
+    "id": "T1-A1",
+    "bloque": "T1",
+    "tema": "Realismo",
+    "tipo": "open",
+    "pregunta": "Resume los rasgos del Realismo y del Naturalismo en España.",
+    "respuesta_modelo": "El Realismo busca la representación objetiva de la realidad mediante narrador omnisciente, detallismo descriptivo, atención a la vida cotidiana y análisis psicológico. El Naturalismo lleva esos rasgos al extremo, subrayando el determinismo, el influjo del medio y la herencia, así como ambientes degradados y crítica social.",
+    "must_include": [
+      "Realismo",
+      "objetividad",
+      "narrador",
+      "omnisciente",
+      "detallismo",
+      "Naturalismo",
+      "determinismo",
+      "medio",
+      "herencia"
+    ],
+    "exp": "El tema 1 contrapone Realismo y Naturalismo y destaca su desarrollo en España.",
+    "min_chars": 180
+  },
+  {
+    "id": "T2-M1",
+    "bloque": "T2",
+    "tema": "Modernismo y 98",
+    "tipo": "mc",
+    "pregunta": "El Modernismo se inclina principalmente hacia…",
+    "opciones": [
+      "la crítica sobria de España",
+      "la evasión estética y sensorial",
+      "la novela social de posguerra",
+      "el tremendismo"
+    ],
+    "correcta": 1,
+    "exp": "El Modernismo privilegia el esteticismo, la musicalidad y la renovación formal."
+  },
+  {
+    "id": "T2-C1",
+    "bloque": "T2",
+    "tema": "Modernismo y 98",
+    "tipo": "cloze",
+    "texto": "La generación del 98 se centra en España, la ________ y las reflexiones ________.",
+    "blanks": [
+      {
+        "a": "intrahistoria"
+      },
+      {
+        "a": "existenciales"
+      }
+    ],
+    "bank": [
+      "intrahistoria",
+      "existenciales",
+      "métricas",
+      "humorísticas"
+    ],
+    "exp": "El 98 busca el alma de España y cultiva temas existenciales y religiosos."
+  },
+  {
+    "id": "T2-MA1",
+    "bloque": "T2",
+    "tema": "Modernismo y 98",
+    "tipo": "match",
+    "pairs": [
+      [
+        "Rubén Darío",
+        "Azul..."
+      ],
+      [
+        "Unamuno",
+        "Niebla"
+      ],
+      [
+        "Pío Baroja",
+        "El árbol de la ciencia"
+      ],
+      [
+        "Valle-Inclán",
+        "Sonatas"
+      ]
+    ],
+    "exp": "El tema 2 distingue autores y obras clave del Modernismo y del 98."
+  },
+  {
+    "id": "T2-A1",
+    "bloque": "T2",
+    "tema": "Modernismo y 98",
+    "tipo": "open",
+    "pregunta": "Explica las diferencias básicas entre Modernismo y Generación del 98.",
+    "respuesta_modelo": "El Modernismo responde a la crisis de fin de siglo mediante la evasión, el esteticismo, la renovación métrica y un lenguaje sensorial y ornamental. La generación del 98, en cambio, adopta un estilo más sobrio y natural, se preocupa por España, la intrahistoria y los problemas existenciales, y utiliza sobre todo la novela y el ensayo.",
+    "must_include": [
+      "Modernismo",
+      "evasión",
+      "estética",
+      "renovación",
+      "métrica",
+      "98",
+      "sobriedad",
+      "España",
+      "intrahistoria",
+      "existenciales"
+    ],
+    "exp": "La oposición entre estética modernista y preocupación regeneracionista es central en el tema 2.",
+    "min_chars": 180
+  },
+  {
+    "id": "T3-M1",
+    "bloque": "T3",
+    "tema": "Novecentismo",
+    "tipo": "mc",
+    "pregunta": "El arte novecentista se concibe como un arte…",
+    "opciones": [
+      "para masas",
+      "puro y para minorías",
+      "espontáneo e irracional",
+      "únicamente político"
+    ],
+    "correcta": 1,
+    "exp": "El Novecentismo persigue depuración, intelectualidad y placer estético."
+  },
+  {
+    "id": "T3-C1",
+    "bloque": "T3",
+    "tema": "Novecentismo",
+    "tipo": "cloze",
+    "texto": "Las tres etapas de Juan Ramón son ________, intelectual y ________.",
+    "blanks": [
+      {
+        "a": "sensitiva"
+      },
+      {
+        "a": "suficiente"
+      }
+    ],
+    "bank": [
+      "sensitiva",
+      "suficiente",
+      "romántica",
+      "social"
+    ],
+    "exp": "El tema 3 organiza la obra de Juan Ramón en tres etapas principales."
+  },
+  {
+    "id": "T3-MA1",
+    "bloque": "T3",
+    "tema": "Novecentismo",
+    "tipo": "match",
+    "pairs": [
+      [
+        "Ortega y Gasset",
+        "La deshumanización del arte"
+      ],
+      [
+        "Juan Ramón Jiménez",
+        "Diario de un poeta recién casado"
+      ],
+      [
+        "Ramón Pérez de Ayala",
+        "novela novecentista"
+      ]
+    ],
+    "exp": "El tema 3 combina ensayo, novela novecentista y poesía pura."
+  },
+  {
+    "id": "T3-A1",
+    "bloque": "T3",
+    "tema": "Novecentismo",
+    "tipo": "open",
+    "pregunta": "Resume el Novecentismo y las etapas de Juan Ramón Jiménez.",
+    "respuesta_modelo": "El Novecentismo o Generación del 14 busca un arte puro, intelectual y depurado, alejado del sentimentalismo. Cultiva sobre todo el ensayo y una novela lírica y reflexiva. Juan Ramón Jiménez representa la lírica novecentista con tres etapas: sensitiva o modernista, intelectual o de poesía pura y suficiente o verdadera en el exilio.",
+    "must_include": [
+      "Novecentismo",
+      "arte",
+      "puro",
+      "intelectual",
+      "ensayo",
+      "Juan",
+      "Ramón",
+      "sensitiva",
+      "intelectual",
+      "suficiente"
+    ],
+    "exp": "En este tema importa unir los principios estéticos con autores y etapas.",
+    "min_chars": 180
+  },
+  {
+    "id": "T4-M1",
+    "bloque": "T4",
+    "tema": "Vanguardias",
+    "tipo": "mc",
+    "pregunta": "Las vanguardias se caracterizan por…",
+    "opciones": [
+      "continuidad total con la tradición",
+      "ruptura, provocación y afán de originalidad",
+      "culto exclusivo al costumbrismo",
+      "rechazo de toda innovación"
+    ],
+    "correcta": 1,
+    "exp": "Los ismos rompen con la tradición y buscan novedad, provocación e irracionalidad."
+  },
+  {
+    "id": "T4-C1",
+    "bloque": "T4",
+    "tema": "Vanguardias",
+    "tipo": "cloze",
+    "texto": "El Surrealismo indaga en el ________ y utiliza técnicas como la escritura ________.",
+    "blanks": [
+      {
+        "a": "subconsciente"
+      },
+      {
+        "a": "automática"
+      }
+    ],
+    "bank": [
+      "subconsciente",
+      "automática",
+      "paisaje",
+      "clásica"
+    ],
+    "exp": "El Surrealismo, ligado a Freud, busca liberar la razón y explorar sueños y símbolos."
+  },
+  {
+    "id": "T4-MA1",
+    "bloque": "T4",
+    "tema": "Vanguardias",
+    "tipo": "match",
+    "pairs": [
+      [
+        "Futurismo",
+        "Marinetti"
+      ],
+      [
+        "Cubismo",
+        "caligrama"
+      ],
+      [
+        "Dadaísmo",
+        "Tzara"
+      ],
+      [
+        "Surrealismo",
+        "Breton"
+      ]
+    ],
+    "exp": "El tema 4 enumera los principales ismos y sus rasgos distintivos."
+  },
+  {
+    "id": "T4-A1",
+    "bloque": "T4",
+    "tema": "Vanguardias",
+    "tipo": "open",
+    "pregunta": "Explica qué son las vanguardias y nombra algunos ismos europeos.",
+    "respuesta_modelo": "Las vanguardias son movimientos artísticos del primer tercio del siglo XX que buscan romper con la tradición y crear un arte original, provocador e innovador. Entre los principales ismos están Futurismo, Cubismo, Dadaísmo, Expresionismo y Surrealismo. En España influyeron en el 27 y en figuras como Ramón Gómez de la Serna.",
+    "must_include": [
+      "vanguardias",
+      "ruptura",
+      "originalidad",
       "Futurismo",
-      "Surrealismo",
-      "Ultraísmo"
-    ],
-    "correcta": 1,
-    "exp": "Futurismo (Marinetti, 1909) exalta modernidad, riesgo y tecnología; explora nuevas formas y rompe normas."
-  },
-  {
-    "id": "T4-03",
-    "tema": "4. Vanguardias",
-    "tipo": "mc",
-    "pregunta": "El caligrama (Apollinaire) es una técnica asociada al…",
-    "opciones": [
-      "Cubismo literario",
+      "Cubismo",
+      "Dadaísmo",
       "Expresionismo",
-      "Creacionismo",
-      "Novecentismo"
+      "Surrealismo"
     ],
-    "correcta": 0,
-    "exp": "El Cubismo literario adopta visión fragmentaria y discontinua y usa el caligrama."
+    "exp": "Basta con definir el movimiento general y situar varios ismos con un rasgo de cada uno.",
+    "min_chars": 180
   },
   {
-    "id": "T4-04",
-    "tema": "4. Vanguardias",
+    "id": "T5-M1",
+    "bloque": "T5",
+    "tema": "Generación del 27",
     "tipo": "mc",
-    "pregunta": "El Surrealismo se inicia en 1924 con André Breton y se apoya en…",
+    "pregunta": "La Generación del 27 se caracteriza por unir…",
     "opciones": [
-      "Teorías de Freud (sueños, subconsciente)",
-      "Teoría evolucionista de Darwin",
-      "Positivismo de Comte",
-      "Marxismo y lucha de clases"
-    ],
-    "correcta": 0,
-    "exp": "El temario lo vincula con Freud: símbolos del subconsciente, sueños, liberación de la razón, escritura automática."
-  },
-  {
-    "id": "T4-05",
-    "tema": "4. Vanguardias",
-    "tipo": "mc",
-    "pregunta": "¿Qué es una **greguería** según Ramón Gómez de la Serna?",
-    "opciones": [
-      "Un poema épico",
-      "'Humor + metáfora' en máxima condensación expresiva",
-      "Un caligrama futurista",
-      "Un manifiesto dadaísta"
+      "realismo y naturalismo",
+      "tradición y vanguardia",
+      "costumbrismo y folletín",
+      "triunfalismo y censura"
     ],
     "correcta": 1,
-    "exp": "Se definen como 'humor más metáfora', textos brevísimos y condensados con visión cercana a lo surrealista."
+    "exp": "El 27 combina lo popular y lo culto, lo clásico y lo innovador."
   },
   {
-    "id": "T4-06",
-    "tema": "4. Vanguardias",
-    "tipo": "mc",
-    "pregunta": "Vanguardias originales hispanoamericanas destacadas en el temario:",
-    "opciones": [
-      "Modernismo y Realismo",
-      "Creacionismo (Chile) y Ultraísmo (Argentina)",
-      "Novecentismo y 98",
-      "Naturalismo y Simbolismo"
+    "id": "T5-C1",
+    "bloque": "T5",
+    "tema": "Generación del 27",
+    "tipo": "cloze",
+    "texto": "Las tres etapas del 27 son: hasta 1927, 1927-1936 y la etapa del ________ tras la Guerra ________.",
+    "blanks": [
+      {
+        "a": "exilio"
+      },
+      {
+        "a": "Civil"
+      }
     ],
-    "correcta": 1,
-    "exp": "Se citan Creacionismo (Huidobro) y Ultraísmo (Borges/Ultra) como vanguardias originales en Hispanoamérica."
-  },
-  {
-    "id": "T5-01",
-    "tema": "5. Generación del 27 y Lorca",
-    "tipo": "mc",
-    "pregunta": "La Generación del 27 recibe su nombre por…",
-    "opciones": [
-      "Publicar un manifiesto en 1914",
-      "Un encuentro en Sevilla (1927) por el tricentenario de la muerte de Góngora",
-      "Fundar la revista Ultra",
-      "La Guerra Civil"
+    "bank": [
+      "exilio",
+      "Civil",
+      "campo",
+      "romanticismo"
     ],
-    "correcta": 1,
-    "exp": "Se denomina así por el encuentro de 1927 en Sevilla para conmemorar a Góngora."
+    "exp": "La Guerra Civil rompe el grupo y abre la etapa de exilio, nostalgia y angustia."
   },
   {
-    "id": "T5-02",
-    "tema": "5. Generación del 27 y Lorca",
-    "tipo": "mc",
-    "pregunta": "Rasgo general de la poesía del 27:",
-    "opciones": [
-      "Rechazo de lo popular",
-      "Unión de lo popular y lo vanguardista; mezcla de tradición métrica y verso libre",
-      "Solo verso libre sin tradición",
-      "Solo poesía social de posguerra"
+    "id": "T5-MA1",
+    "bloque": "T5",
+    "tema": "Generación del 27",
+    "tipo": "match",
+    "pairs": [
+      [
+        "Pedro Salinas",
+        "La voz a ti debida"
+      ],
+      [
+        "Lorca",
+        "Poeta en Nueva York"
+      ],
+      [
+        "Rafael Alberti",
+        "Sobre los ángeles"
+      ],
+      [
+        "Miguel Hernández",
+        "Viento del pueblo"
+      ]
     ],
-    "correcta": 1,
-    "exp": "El grupo combina lo popular y lo vanguardista: tradición clásica/renacentista con verso libre, coloquialidad e imagen poética."
+    "exp": "El tema 5 repasa autores representativos del 27 y algunas obras clave."
   },
   {
-    "id": "T5-03",
-    "tema": "5. Generación del 27 y Lorca",
-    "tipo": "mc",
-    "pregunta": "Etapa 1927-1936 en el 27 se caracteriza por…",
-    "opciones": [
-      "Perfección formal neopopular y poesía pura exclusivamente",
-      "Influencia del Surrealismo y retorno a temas del ser humano",
-      "Disolución del grupo por el exilio",
-      "Poesía desarraigada de los años 40"
-    ],
-    "correcta": 1,
-    "exp": "Segunda etapa (1927-1936): marcada por el Surrealismo y retorno a temas humanos."
-  },
-  {
-    "id": "T5-04",
-    "tema": "5. Generación del 27 y Lorca",
-    "tipo": "mc",
-    "pregunta": "Sobre Lorca: una obra asociada a su poesía surrealista es…",
-    "opciones": [
-      "Romancero gitano",
-      "Poeta en Nueva York",
-      "Marinero en tierra",
-      "Cántico"
-    ],
-    "correcta": 1,
-    "exp": "'Poeta en Nueva York' se señala como obra surrealista y crítica social a la realidad neoyorquina."
-  },
-  {
-    "id": "T5-05",
-    "tema": "5. Generación del 27 y Lorca",
-    "tipo": "mc",
-    "pregunta": "La compañía 'La barraca' se relaciona con…",
-    "opciones": [
-      "Teatro comercial burgués",
-      "Acercar el teatro al pueblo mediante representaciones itinerantes, liderada por Lorca y Salinas",
-      "Teatro poético de los Machado",
-      "Astracanada de Muñoz Seca"
-    ],
-    "correcta": 1,
-    "exp": "Con el 27 se busca acercar el teatro al pueblo; 'La barraca' recorre pueblos con obras clásicas."
-  },
-  {
-    "id": "T5-06",
-    "tema": "5. Generación del 27 y Lorca",
+    "id": "T5-A1",
+    "bloque": "T5",
+    "tema": "Generación del 27",
     "tipo": "open",
-    "pregunta": "Explica 3 rasgos del **teatro lorquiano** y menciona las 3 obras de la 'Trilogía rural'.",
-    "respuesta_modelo": "El teatro lorquiano busca renovar la escena: es un espectáculo total y poético, con fuerte lirismo y simbolismo. Da protagonismo a personajes marginados (especialmente mujeres) y gira en torno al conflicto individuo/autoridad y al destino trágico. En la 'Trilogía rural' o 'drama de mujeres' están: Bodas de sangre, Yerma y La casa de Bernarda Alba.",
-    "exp": "Resumen de los rasgos y obras citadas en el tema 5."
+    "pregunta": "Resume los rasgos del 27 y el teatro lorquiano.",
+    "respuesta_modelo": "La Generación del 27 une tradición y vanguardia, combina verso libre con formas clásicas y atraviesa tres etapas: perfección formal, surrealismo y etapa del exilio tras la Guerra Civil. El teatro lorquiano renueva la escena con lirismo, simbolismo, protagonismo femenino, personajes marginados y conflictos entre individuo, autoridad y destino trágico.",
+    "must_include": [
+      "27",
+      "tradición",
+      "vanguardia",
+      "tres",
+      "etapas",
+      "surrealismo",
+      "exilio",
+      "teatro",
+      "lorquiano",
+      "simbolismo",
+      "mujeres",
+      "destino",
+      "trágico"
+    ],
+    "exp": "Conviene responder en dos partes: primero poesía del 27, después teatro de Lorca.",
+    "min_chars": 180
+  },
+  {
+    "id": "T6-M1",
+    "bloque": "T6",
+    "tema": "Novela 1939-1975",
+    "tipo": "mc",
+    "pregunta": "La obra que inaugura el tremendismo es…",
+    "opciones": [
+      "Nada",
+      "La familia de Pascual Duarte",
+      "El Jarama",
+      "Tiempo de silencio"
+    ],
+    "correcta": 1,
+    "exp": "En el tema 6 se vincula el tremendismo a Cela y a La familia de Pascual Duarte."
+  },
+  {
+    "id": "T6-C1",
+    "bloque": "T6",
+    "tema": "Novela 1939-1975",
+    "tipo": "cloze",
+    "texto": "En los años 50 domina el realismo ________, y en 1962 Tiempo de ________ abre la innovación narrativa.",
+    "blanks": [
+      {
+        "a": "social"
+      },
+      {
+        "a": "silencio"
+      }
+    ],
+    "bank": [
+      "social",
+      "silencio",
+      "mágico",
+      "amor"
+    ],
+    "exp": "La exposición diacrónica del tema pasa del realismo social a la experimentación."
+  },
+  {
+    "id": "T6-MA1",
+    "bloque": "T6",
+    "tema": "Novela 1939-1975",
+    "tipo": "match",
+    "pairs": [
+      [
+        "Carmen Laforet",
+        "Nada"
+      ],
+      [
+        "Miguel Delibes",
+        "Los santos inocentes"
+      ],
+      [
+        "Rafael Sánchez Ferlosio",
+        "El Jarama"
+      ],
+      [
+        "Luis Martín-Santos",
+        "Tiempo de silencio"
+      ]
+    ],
+    "exp": "El tema 6 organiza la narrativa por décadas y obras clave."
+  },
+  {
+    "id": "T6-A1",
+    "bloque": "T6",
+    "tema": "Novela 1939-1975",
+    "tipo": "open",
+    "pregunta": "Explica la evolución de la novela española entre 1939 y 1975.",
+    "respuesta_modelo": "Tras la Guerra Civil aparece la novela del exilio. En los años 40 conviven la novela triunfalista y la existencial, con obras como Nada o La familia de Pascual Duarte. En los años 50 domina el realismo social y, desde 1962, la innovación narrativa y experimental abre una nueva etapa con Tiempo de silencio.",
+    "must_include": [
+      "exilio",
+      "40",
+      "existencial",
+      "triunfalista",
+      "50",
+      "realismo",
+      "social",
+      "1962",
+      "innovación",
+      "narrativa",
+      "Tiempo",
+      "de",
+      "silencio"
+    ],
+    "exp": "La clave es seguir la cronología: exilio, 40, 50 y 60-75.",
+    "min_chars": 180
+  },
+  {
+    "id": "T8-M1",
+    "bloque": "T8",
+    "tema": "Novela desde 1975",
+    "tipo": "mc",
+    "pregunta": "A partir de 1975, la novela española tiende a…",
+    "opciones": [
+      "radicalizar el experimentalismo y abandonar la trama",
+      "recuperar el gusto por narrar y mezclar géneros",
+      "eliminar los géneros narrativos",
+      "centrarse solo en la poesía"
+    ],
+    "correcta": 1,
+    "exp": "El tema 8 subraya la recuperación de la narratividad y la diversificación de tendencias."
+  },
+  {
+    "id": "T8-C1",
+    "bloque": "T8",
+    "tema": "Novela desde 1975",
+    "tipo": "cloze",
+    "texto": "Entre las tendencias principales destacan la novela policíaca, la histórica, la ________ y la testimonial.",
+    "blanks": [
+      {
+        "a": "intimista"
+      }
+    ],
+    "bank": [
+      "intimista",
+      "épica",
+      "mística",
+      "satírica"
+    ],
+    "exp": "El tema 8 destaca varias líneas: policíaca, histórica, intimista y comprometida/testimonial."
+  },
+  {
+    "id": "T8-MA1",
+    "bloque": "T8",
+    "tema": "Novela desde 1975",
+    "tipo": "match",
+    "pairs": [
+      [
+        "Eduardo Mendoza",
+        "La verdad sobre el caso Savolta"
+      ],
+      [
+        "Arturo Pérez-Reverte",
+        "El capitán Alatriste"
+      ],
+      [
+        "Julio Llamazares",
+        "La lluvia amarilla"
+      ],
+      [
+        "Rafael Chirbes",
+        "Crematorio"
+      ]
+    ],
+    "exp": "El tema 8 presenta tendencias de la narrativa reciente y ejemplos representativos."
+  },
+  {
+    "id": "T8-A1",
+    "bloque": "T8",
+    "tema": "Novela desde 1975",
+    "tipo": "open",
+    "pregunta": "Resume la novela española a partir de 1975.",
+    "respuesta_modelo": "Con la democracia y el fin de la censura, la novela española recupera el gusto por narrar y abandona el experimentalismo extremo. Se diversifica en múltiples tendencias: policíaca, histórica, intimista, testimonial y otras variantes de género. Predominan la mezcla de géneros, la simplificación estructural y la búsqueda de estilos personales.",
+    "must_include": [
+      "1975",
+      "democracia",
+      "fin",
+      "censura",
+      "gusto",
+      "narrar",
+      "policíaca",
+      "histórica",
+      "intimista",
+      "testimonial"
+    ],
+    "exp": "Conviene destacar el cambio de rumbo y luego enumerar varias tendencias.",
+    "min_chars": 180
   }
 ];
+window.LENGUA_META = {
+  "title": "Lengua PAU · Entrenamiento + Simulacro",
+  "blocks": [
+    {
+      "id": "COM",
+      "title": "Comunicación",
+      "order": 1
+    },
+    {
+      "id": "LENG",
+      "title": "Reflexión sobre la lengua",
+      "order": 2
+    },
+    {
+      "id": "T1",
+      "title": "Tema 1 · Realismo y Naturalismo",
+      "order": 3
+    },
+    {
+      "id": "T2",
+      "title": "Tema 2 · Modernismo y Generación del 98",
+      "order": 4
+    },
+    {
+      "id": "T3",
+      "title": "Tema 3 · Novecentismo y Juan Ramón Jiménez",
+      "order": 5
+    },
+    {
+      "id": "T4",
+      "title": "Tema 4 · Vanguardias",
+      "order": 6
+    },
+    {
+      "id": "T5",
+      "title": "Tema 5 · Generación del 27 y teatro lorquiano",
+      "order": 7
+    },
+    {
+      "id": "T6",
+      "title": "Tema 6 · Novela 1939-1975",
+      "order": 8
+    },
+    {
+      "id": "T8",
+      "title": "Tema 8 · Novela desde 1975",
+      "order": 9
+    }
+  ],
+  "study_cards": {
+    "COM": [
+      [
+        "Formato PAU",
+        "Comentario de texto, resumen de 40-50 palabras y texto argumentativo de 100-150 palabras."
+      ],
+      [
+        "Idea útil",
+        "Primero identifica tema y tipo de texto; después resume sin copiar; por último argumenta con postura clara."
+      ]
+    ],
+    "LENG": [
+      [
+        "Formato PAU",
+        "Sintaxis, reflexión gramatical, morfología y sinonimia."
+      ],
+      [
+        "Idea útil",
+        "En gramática, nombra la categoría con precisión y justifica siempre con un ejemplo."
+      ]
+    ],
+    "T1": [
+      [
+        "Mapa mínimo",
+        "Realismo: observación objetiva, narrador omnisciente, detallismo, burguesía y vida cotidiana. Naturalismo: determinismo, ambientes duros, herencia y medio."
+      ],
+      [
+        "Mnemotecnia",
+        "R-O-D-B / N-D-M"
+      ]
+    ],
+    "T2": [
+      [
+        "Mapa mínimo",
+        "Modernismo: evasión, estética, sensorialidad. 98: sobriedad, España, intrahistoria, existencialismo. Teatro anterior a 1936: comercial vs renovador."
+      ],
+      [
+        "Mnemotecnia",
+        "M-E-S / 98-E-I"
+      ]
+    ],
+    "T3": [
+      [
+        "Mapa mínimo",
+        "Novecentismo: arte puro, intelectualidad, ensayo, novela lírica y formalista. Juan Ramón: etapa sensitiva, intelectual y suficiente."
+      ],
+      [
+        "Mnemotecnia",
+        "A-P-I / S-I-S"
+      ]
+    ],
+    "T4": [
+      [
+        "Mapa mínimo",
+        "Vanguardias: ruptura, originalidad, provocación. Futurismo, Cubismo, Dadaísmo, Expresionismo, Surrealismo. En España: Ortega, Ramón y el 27."
+      ],
+      [
+        "Mnemotecnia",
+        "F-C-D-E-S"
+      ]
+    ],
+    "T5": [
+      [
+        "Mapa mínimo",
+        "27: tradición + vanguardia, tres etapas, autores clave. Teatro lorquiano: lirismo, simbolismo, mujer, marginación, destino trágico."
+      ],
+      [
+        "Mnemotecnia",
+        "T+V / 3 etapas / L-S-M-D"
+      ]
+    ],
+    "T6": [
+      [
+        "Mapa mínimo",
+        "Exilio, años 40 (existencial y triunfalista), años 50 (realismo social), años 60-75 (innovación narrativa)."
+      ],
+      [
+        "Mnemotecnia",
+        "E-40-50-60"
+      ]
+    ],
+    "T8": [
+      [
+        "Mapa mínimo",
+        "Desde 1975: fin de la censura, recuperación del gusto por narrar, mezcla de géneros, novela policíaca, histórica, intimista y testimonial."
+      ],
+      [
+        "Mnemotecnia",
+        "N-H-I-T"
+      ]
+    ]
+  },
+  "simulacro_size": 28,
+  "default_simulacro_minutes": 90
+};
